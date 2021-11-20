@@ -1,0 +1,102 @@
+section.gallery.section-spacing-outer.section-spacing-inner#gallery
+    .gallery__bg
+        picture
+            source(srcset='assets/gallery/bg.webp' type='image/webp')
+            img(srcset='assets/gallery/bg.png' alt='')
+        picture
+            source(srcset='assets/gallery/bg.webp' type='image/webp')
+            img(srcset='assets/gallery/bg.png' alt='')
+
+    .container
+
+        .gallery__body
+            .gallery__header.section-header
+                h2.gallery__title.section-title
+                    span Фото
+                    span ЖК “Park Residence”
+                p.gallery__description.section-description З BAU Comfort ви отримаєте не тільки якісне житло, а і найкращі краєвиди міста.
+
+            .gallery__grid.gallery__grid_primary
+
+                //- item 1
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/parking.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/parking.webp' type='image/webp')
+                            img(src='assets/gallery/parking.jpg' alt='Підземний паркінг')
+
+                    h3.gallery__grid-item-title Підземний паркінг
+                    p.gallery__grid-item-text.section-text ЖК Парк Резіденс забезпечує безпеку для Вашого авто. Підіймайтесь додому на ліфті одразу з паркінгу.
+
+            .gallery__grid.gallery__grid_secondary.grid-collapse
+
+                //- item 2 (p)
+                .gallery__grid-item(data-move='576,.gallery__grid.gallery__grid_primary,last,min')
+                    a.gallery__grid-item-img(href='assets/gallery/terraces.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/terraces.webp' type='image/webp')
+                            img(src='assets/gallery/terraces.jpg' alt='Відкриті тераси')
+
+                    h3.gallery__grid-item-title Відкриті тераси
+                    p.gallery__grid-item-text.section-text Облаштуйте свій простір найкращим чином та насолоджуйтесь краєвидами на панораму міста.
+
+                //- item 3 (p)
+                .gallery__grid-item(data-move='576,.gallery__grid.gallery__grid_primary,last,min')
+                    a.gallery__grid-item-img(href='assets/gallery/quality.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/quality.webp' type='image/webp')
+                            img(src='assets/gallery/quality.jpg' alt='Якісне будівництво')
+
+                    h3.gallery__grid-item-title Якісне будівництво
+                    p.gallery__grid-item-text.section-text Новобудова на вул. Мазепи має утеплений мінеральною ватою фасад, що посилює вогнетривкість та ізолює від шумів
+
+                //- item 4 (p)
+                .gallery__grid-item(data-move='576,.gallery__grid.gallery__grid_primary,last,min')
+                    a.gallery__grid-item-img(href='assets/gallery/planning.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/planning.webp' type='image/webp')
+                            img(src='assets/gallery/planning.jpg' alt='Продумані планування')
+
+                    h3.gallery__grid-item-title Продумані планування
+                    p.gallery__grid-item-text.section-text В квартирах сучасні планування з кухнями-студіями.
+
+                //- item 1
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/panoramic.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/panoramic.webp' type='image/webp')
+                            img(src='assets/gallery/panoramic.jpg' alt='Панорамні вікна')
+
+                    h3.gallery__grid-item-title Панорамні вікна
+                    p.gallery__grid-item-text.section-text Квартира в BAU Comfort забезпечує вигляд на парк Шевченка та міське озеро.
+
+                //- item 2
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/security.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/security.webp' type='image/webp')
+                            img(src='assets/gallery/security.jpg' alt='Безпека')
+
+                    h3.gallery__grid-item-title Безпека
+                    p.gallery__grid-item-text.section-text Будинок оснащений консьєрж-сервісом, відеонаглядом в будинку та на території.
+
+                ////- item 3
+                //.gallery__grid-item
+                //    a.gallery__grid-item-img(href='assets/gallery/2.png' data-fslightbox='gallery1')
+                //        picture
+                //            source(srcset='assets/gallery/2.webp' type='image/webp')
+                //            img(src='assets/gallery/2.png' alt='')
+                //
+                //    h3.gallery__grid-item-title Nulla ut ea
+                //    p.gallery__grid-item-text.section-text Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco
+                //
+                ////-item 4
+                //.gallery__grid-item
+                //    a.gallery__grid-item-img(href='assets/gallery/3.png' data-fslightbox='gallery1')
+                //        picture
+                //            source(srcset='assets/gallery/3.webp' type='image/webp')
+                //            img(src='assets/gallery/3.png' alt='')
+                //
+                //    h3.gallery__grid-item-title Nulla ut ea
+                //    p.gallery__grid-item-text.section-text Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco
+            button.gallery__cta.btn.ac-open(data-active-text='Приховати' data-inactive-text='Більше') Більше

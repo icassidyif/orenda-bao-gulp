@@ -1,0 +1,75 @@
+.installments {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: color(dark);
+        opacity: 0.8;
+    }
+
+    &__bg,
+    &__bg * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        hyphens: manual;
+        color: color(light);
+    }
+
+    &__description {
+        color: color(light);
+    }
+
+    &__grid {
+        @include media(md) {
+            margin: 0 0 80 / 16 * 1rem 0;
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        padding: 35 / 16 * 1rem 40 / 16 * 1rem;
+        background-color: color(light);
+        border-radius: var(--border-radius-lg);
+        align-items: center;
+        text-align: center;
+
+        &__icon {
+            fill: color(beige);
+            width: 40 / 16 * 1rem;
+        }
+
+        &__title {
+            flex: 1 0 auto;
+            color: color(dark);
+        }
+
+        &__text {
+            color: color(dark);
+        }
+    }
+
+    &__button {
+        display: none;
+        min-width: 267 / 16 * 1rem;
+
+        @include media(md) {
+            display: inline-flex;
+            min-width: 270 / 16 * 1rem;
+        }
+    }
+}
