@@ -28,15 +28,15 @@ function images() {
                         lossy: 2,
                     }),
                     imageminPngQuant({
-                        speed: 5,
-                        quality: [0.6, 0.8],
+                        speed: 1,
+                        quality: [0.3, 0.4],
                     }),
                     imageminZopfli({
                         more: true,
                     }),
                     imageminMozJpeg({
                         progressive: true,
-                        quality: 90,
+                        quality: 60,
                     }),
                     imagemin.svgo({
                         plugins: [
